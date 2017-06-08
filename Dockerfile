@@ -12,4 +12,4 @@ EXPOSE 4000/tcp
 VOLUME ["/app"]
 WORKDIR /app
 
-ENTRYPOINT ["bash", "-l", "-c", "bundle install && bundle exec jekyll serve --watch --force_polling"]
+ENTRYPOINT ["bash", "-l", "-c", "'bundle install && bundle exec jekyll serve --watch --force_polling'"]
