@@ -7,9 +7,11 @@ RUN bash -l -c 'rvm requirements'
 RUN bash -l -c 'rvm use --default ruby-2.4.1 --binary --install'
 RUN bash -l -c 'gem install bundler'
 
+COPY run_jekyll.sh /run_jekyll.sh
+
 EXPOSE 4000/tcp
 
 VOLUME ["/app"]
 WORKDIR /app
 
-ENTRYPOINT ["bash", "-l", "-c", "'bundle install && bundle exec jekyll serve --watch --force_polling'"]
+ENTRYPOINT ["bash", "-l", "/run_jekyll.sh"]
