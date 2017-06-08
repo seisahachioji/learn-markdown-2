@@ -6,3 +6,4 @@ services:
       - "4000:4000/tcp"
     volumes:
       - ./src:/app
+    restart: always
