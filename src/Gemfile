@@ -3,13 +3,12 @@ source "https://rubygems.org"
 
 gem 'therubyracer', '~> 0.12.2'
 
-# gem 'jekyll', '~> 3.4', '>= 3.4.3'
-
-gem 'jekyll-theme-cayman', '~> 0.0.4'
+gem 'jekyll', '~> 3.4', '>= 3.4.3'
+gem 'jekyll-watch', '~> 1.5'
 
 group :jekyll_plugins do
   #gem "jekyll-feed", "~> 0.6"
-  gem 'github-pages', '~> 139'
+  #gem 'github-pages', '~> 139'
 end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem

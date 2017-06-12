@@ -1,0 +1,39 @@
+body {
+  height: 100vh;
+  overflow-y: scroll;
+}
+
+#content {
+  border-radius: 2px;
+  padding: 80px 56px;
+  margin-bottom: 80px;
+}
+
+#ribbon {
+  width: 100%;
+  height: 40vh;
+  background-color: #3F51B5;
+  flex-shrink: 0;
+}
+
+#main {
+  margin-top: -35vh;
+  flex-shrink: 0;
+}
+
+#header-title img,
+.mdl-navigation__link.lm2-withicon img {
+  max-width: 2.5em;
+  max-height: 2.5em;
+}
+
+#header-title img,
+#header-title span,
+.mdl-navigation__link.lm2-withicon img,
+.mdl-navigation__link.lm2-withicon span {
+  vertical-align: middle;
+}
+
+#content img:not([disable-auto-width]) {
+  max-width: 100%;
+}

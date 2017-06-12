@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0"/>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons"/>
+    <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.indigo-pink.min.css"/>
+    <link rel="stylesheet" href="/style.css"/>
+    <title>{{ page.title | default: site.title }}</title>
+  </head>
+  <body>
+    <div class="mdl-layout mdl-layout--fixed-header mdl-js-layout">
+      <header class="mdl-layout__header mdl-layout__header--scroll">
+        <div class="mdl-layout__header-row">
+          <span id="header-title" class="mdl-layout-title">
+            {% if page.icon %}
+              <img src="{{ page.icon }}"/>
+            {% endif %}
+            <span>{{ site.title }}</span>
+          </span>
+          <div class="mdl-layout-spacer"></div>
+          <nav class="mdl-navigation mdl-layout--large-screen-only">
+            <a class="mdl-navigation__link" href="http://seisahachioji.gitlab.io/programming-seminar-2017" target="_blank">
+              <i class="material-icons md-light">school</i>
+            </a>
+            <a class="mdl-navigation__link" href="https://github.com/seisahachioji/learn-markdown-2" target="_blank">
+              <i class="material-icons md-light">code</i>
+            </a>
+          </nav>
+        </div>
+      </header>
+      <div class="mdl-layout__drawer">
+        <span class="mdl-layout-title">{{ site.title }}</span>
+        <nav class="mdl-navigation">
+        <a class="mdl-navigation__link" href="/">このサイトについて</a>
+        {% for profile in site.profiles %}
+          <a class="mdl-navigation__link lm2-withicon" href="{{ profile.url }}">
+            <img src="{{ profile.icon }}"/>
+            <span>{{ profile.title }}</span>
+          </a>
+        {% endfor %}
+        </nav>
+      </div>
+      <div id="ribbon"></div>
+      <main id="main" class="mdl-layout__content">
+        <div class="mdl-grid">
+          <div class="mdl-cell mdl-cell--2-col mdl-cell--hide-tablet mdl-cell--hide-phone"></div>
+          <div id="content" class="mdl-color--white mdl-shadow--4dp mdl-cell mdl-cell--8-col">
+            {{ content }}
+          </div>
+        </div>
+      </main>
+    </div>
+    <script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
+  </body>
+</html>

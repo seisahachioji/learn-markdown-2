@@ -1,3 +1,6 @@
 Thumbs.db
 .DS_Store
 
+src/vendor
+src/_site
+src/node_modules

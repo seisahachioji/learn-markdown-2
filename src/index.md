@@ -1,19 +1,14 @@
 ---
 layout: default
-title: ここにタイトルを書きます
-description: ここに説明文を書きます
+title: learn-markdown-2
 ---
 
-# あなたの学年と名前を書きましょう！
+# このページについて
 
-<img src="./your-profile-icon.png" width="100"/>
+Markdownの書き方を学ぶ授業で利用するサイトです。  
+`/src/_profiles`以下にファイルを配置することで、自動でメニューにプロフィールが並べられます。
 
-ここに自分の写真を設定しましょう。
-
-# 自己紹介
-
-ここにコンテンツを書きます。  
-以下はMarkdownの書式サンプルです。完成後、削除してください。
+以下はMarkdownの書式サンプルです。
 
 ---
 

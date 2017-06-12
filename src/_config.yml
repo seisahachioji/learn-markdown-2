@@ -1,13 +1,18 @@
 # TODO: 取り急ぎ作ったままなので整理する
-title: Your awesome title
+title: learn-markdown-2
 description: ""
 
 markdown: kramdown
-gems: []
 exclude:
   - Gemfile
   - Gemfile.lock
   - vendor/
+  - node_modules/
+
+collections:
+  profiles:
+    output: true
+    permalink: /:collection/:name:output_ext
 
 host: 0.0.0.0
 port: 4000
