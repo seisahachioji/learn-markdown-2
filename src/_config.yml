@@ -1,15 +1,8 @@
 # TODO: 取り急ぎ作ったままなので整理する
 title: Your awesome title
-description: > # this means to ignore newlines until "baseurl:"
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
-
-lang: ja-JP
-show_downloads: false
+description: ""
 
 markdown: kramdown
-theme: jekyll-theme-cayman
 gems: []
 exclude:
   - Gemfile
@@ -18,11 +11,3 @@ exclude:
 
 host: 0.0.0.0
 port: 4000
-
-repository: S64/learn-markdown
-github:
-  repository_name: learn-markdown
-  owner_name: S64 (Shuma Yoshioka)
-  is_project_page: false
-  project_tagline: nil
-  build_version: nil
